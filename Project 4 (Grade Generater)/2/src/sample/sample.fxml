@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="frame" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="448.0" prefWidth="384.0">
+         <children>
+            <Label layoutX="111.0" layoutY="28.0" prefHeight="33.0" prefWidth="43.0" text="Quiz 1" />
+            <TextField fx:id="field1" layoutX="162.0" layoutY="32.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <Label layoutX="111.0" layoutY="61.0" prefHeight="33.0" prefWidth="43.0" text="Quiz 2" />
+            <Label layoutX="111.0" layoutY="94.0" prefHeight="33.0" prefWidth="43.0" text="Quiz 3" />
+            <Label layoutX="111.0" layoutY="193.0" prefHeight="33.0" prefWidth="43.0" text="Quiz 6" />
+            <Label layoutX="111.0" layoutY="160.0" prefHeight="33.0" prefWidth="43.0" text="Quiz 5" />
+            <Label layoutX="111.0" layoutY="127.0" prefHeight="33.0" prefWidth="43.0" text="Quiz 4" />
+            <TextField fx:id="field2" layoutX="162.0" layoutY="65.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="65.0" />
+            <TextField fx:id="field3" layoutX="162.0" layoutY="98.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <TextField fx:id="field4" layoutX="162.0" layoutY="131.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <TextField fx:id="field5" layoutX="162.0" layoutY="164.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <TextField fx:id="field6" layoutX="162.0" layoutY="197.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <Label layoutX="89.0" layoutY="227.0" prefHeight="33.0" prefWidth="66.0" text="Attendance" />
+            <Label layoutX="88.0" layoutY="257.0" prefHeight="33.0" prefWidth="66.0" text="Assignment" />
+            <Label layoutX="89.0" layoutY="285.0" prefHeight="33.0" prefWidth="66.0" text="Mid" />
+            <Label layoutX="88.0" layoutY="318.0" prefHeight="33.0" prefWidth="66.0" text="Final" />
+            <TextField fx:id="field10" layoutX="162.0" layoutY="321.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <TextField fx:id="field9" layoutX="162.0" layoutY="291.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <TextField fx:id="field8" layoutX="162.0" layoutY="260.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <TextField fx:id="field7" layoutX="162.0" layoutY="231.0" onKeyPressed="#keyPress" onMouseClicked="#mouseClick" prefHeight="26.0" prefWidth="66.0" />
+            <Button fx:id="button1" layoutX="177.0" layoutY="366.0" mnemonicParsing="false" onAction="#buttonClick" onKeyPressed="#keyPress" text="Calculate" />
+            <Label layoutX="112.0" layoutY="403.0" prefHeight="34.0" prefWidth="43.0" text="Grade" />
+            <Label fx:id="output" layoutX="162.0" layoutY="403.0" prefHeight="33.0" prefWidth="90.0" />
+            <CheckBox fx:id="tick1" disable="true" layoutX="262.0" layoutY="36.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick2" disable="true" layoutX="262.0" layoutY="69.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick3" disable="true" layoutX="262.0" layoutY="102.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick4" disable="true" layoutX="262.0" layoutY="135.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick5" disable="true" layoutX="262.0" layoutY="168.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick6" disable="true" layoutX="262.0" layoutY="200.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick7" disable="true" layoutX="262.0" layoutY="235.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick8" disable="true" layoutX="262.0" layoutY="263.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick9" disable="true" layoutX="262.0" layoutY="295.0" mnemonicParsing="false" />
+            <CheckBox fx:id="tick10" disable="true" layoutX="262.0" layoutY="325.0" mnemonicParsing="false" />
+            <Label layoutX="234.0" layoutY="37.0" prefHeight="17.0" prefWidth="23.0" text="/20" />
+            <Label layoutX="234.0" layoutY="69.0" prefHeight="17.0" prefWidth="23.0" text="/20" />
+            <Label layoutX="234.0" layoutY="102.0" prefHeight="17.0" prefWidth="23.0" text="/20" />
+            <Label layoutX="234.0" layoutY="135.0" prefHeight="17.0" prefWidth="23.0" text="/20" />
+            <Label layoutX="234.0" layoutY="168.0" prefHeight="17.0" prefWidth="23.0" text="/20" />
+            <Label layoutX="234.0" layoutY="200.0" prefHeight="17.0" prefWidth="23.0" text="/20" />
+            <Label layoutX="233.0" layoutY="235.0" prefHeight="17.0" prefWidth="23.0" text="/5" />
+            <Label layoutX="233.0" layoutY="265.0" prefHeight="17.0" prefWidth="23.0" text="/10" />
+            <Label layoutX="232.0" layoutY="293.0" prefHeight="17.0" prefWidth="23.0" text="/20" />
+            <Label layoutX="233.0" layoutY="325.0" prefHeight="17.0" prefWidth="23.0" text="/25" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
